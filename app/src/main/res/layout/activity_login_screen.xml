@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="p4uman.com.examenpablolira.LoginScreen">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/girl" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_yep"
+            style="@style/CustomTextStyle"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:text="Yep!"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/textIcons"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/CustomEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toStartOf="@+id/title">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/userNameField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Username"
+                        android:textColor="@color/primaryText"
+                        android:textColorHint="@color/colorAccent"
+                        android:textSize="17sp">
+
+                        <requestFocus />
+                    </android.support.design.widget.TextInputEditText>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/CustomEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toStartOf="@+id/title">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/userNameField2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Password"
+                        android:textColor="@color/primaryText"
+                        android:textColorHint="@color/colorAccent"
+                        android:textSize="17sp">
+
+                    </android.support.design.widget.TextInputEditText>
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btn_singin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mybutton"
+                    android:text="sing in" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="UEM handycrafted"
+                android:textAlignment="center"
+                android:textColor="@color/textIcons" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

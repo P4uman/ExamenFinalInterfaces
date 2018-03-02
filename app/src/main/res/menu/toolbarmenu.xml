@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.rcl.appuem.MainActivity">
+    <item
+        android:id="@+id/coso1"
+        android:icon="@drawable/bookopenpagevariant"
+        android:title="Item"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/coso2"
+        android:icon="@drawable/laptopchromebook"
+        android:orderInCategory="100"
+        android:title="item"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/alumni"
+        app:showAsAction="collapseActionView"
+        android:title="Alumni"
+        />
+    <item
+        android:id="@+id/perfil"
+        app:showAsAction="collapseActionView"
+        android:title="Perfil"
+        />
+</menu>
